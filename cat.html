@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="javascript/jquery-3.6.4.min.js"></script>
+    <script src="javascript/script.js"defer></script>
+    <script type="text/javascript" src="javascript/slick.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"defer></script>
+<style>
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
+/*font-family: 'Noto Sans KR', sans-serif; 
+font-family: 'Roboto', sans-serif; */
+ /*----------header---------------------*/
+ a{text-decoration: none;
+  display: block; color:#333;} 
+body{width:100%;}
+*{margin:0 auto; padding:0;
+ text-align: center;
+ color:#333;
+ box-sizing: border-box;
+ font-family: 'Roboto', sans-serif; }
+ .wrap{width:95%; margin:50px auto;} 
+ .clearfix ::after{content:"";
+    display:block; clear:both;}
+li{list-style: none;}
+
+
+    
+
+.nav-link a:hover{color:purple;}
+.navbar-brand img{margin-left: 20px;}
+
+.navbar-expand-lg {width:100%;}
+.navbar-nav{width:50%;}
+
+.nav-item a{font-size: 18px; font-weight: bold; }
+
+.card{padding-top: 40px; padding-right: 10px;}
+.card :first-child{ padding-left: 10px;}
+
+/*----------section---------------------*/
+.card-group{float: left; margin-top: 30px; margin-bottom: 30px;
+}
+
+.video {max-width: 100%; }
+.card-title{color: purple; font-weight: bold;}
+footer{background-color: black; height: 150px; clear: both;
+line-height: 150px; /*display: flex;*/ }
+footer p{color: #fff; font-size: 18px; font-weight: bold; text-align: center;}
+
+
+</style>
+</head>
+<body>
+    <div class="wrap">
+      <nav class="navbar bg-blue" style="background-color: #ffeb7f;">
+        <!-- Navbar content -->
+        <nav class="navbar navbar-expand-lg bg-body-blue" >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/artcat.png" alt="로고이미지" width="60" height="60"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="index.html" target="_self">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sub1.html" target="_self">작품소개</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="cat.html" target="_self">My Cat</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    My Portfolio
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">UI/UX</a></li>
+                    <li><a class="dropdown-item" href="#">Figma</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled"></a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="미술관에 간 냥이" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </nav>
+      
+    
+        <div class="card-group">
+            <div class="card">
+              <video src="images/pianocat.mp4" class="card-img-top"  controls></video>
+              <div class="card-body">
+                <h5 class="card-title">Piano Cat</h5>
+                <p class="card-text">집사야~ 나도 피아노 잘 칠 수 있어</p>
+               
+                <p class="card-text"><small class="text-body-secondary">Piano Man - Billy joel</small></p>
+              </div>
+            </div>
+            <div class="card">
+                <video src="images/road.mp4" class="card-img-top"  controls></video>
+              <div class="card-body">
+                <h5 class="card-title">Curious Cat</h5>
+                <p class="card-text"> 그냥 길이 그냥 거기 있으면 가는 거냥 ~ <br> 집 구석구석 다 가 볼거야 </p>
+                <p class="card-text"><small class="text-body-secondary">그건 니 생각이고 - 장기하와 얼굴들</small></p>
+              </div>
+            </div>  
+            <div class="card">
+                <video src="images/rain.mp4" class="card-img-top" controls></video>
+              <div class="card-body">
+                <h5 class="card-title">Rain Cat</h5>
+                <p class="card-text">창밖엔 또 비가 와~<br> 비를 좋아하는 냥이
+                </p>
+                <p class="card-text"><small class="text-body-secondary">신청곡 - 이소라</small></p>
+              </div>
+            </div>
+            <div class="card">
+                <video src="images/food.mp4" class="card-img-top" controls></video>
+                <div class="card-body">
+                  <h5 class="card-title">Quickly Cat</h5>
+                  <p class="card-text"> 냥이 키우려면 집사도 잽싸져야 ~
+                  </p>
+                  <p class="card-text"><small class="text-body-secondary">썸 - 소유,정기고 </small></p>
+                </div>
+              </div>
+          </div>
+
+          <div class="card-group">
+            <div class="card">
+                <video src="images/sleeping.mp4" class="card-img-top"  controls></video>
+                <div class="card-body">
+                  <h5 class="card-title">Sleeping Cat</h5>
+                  <p class="card-text">까무룩~ 금세 잠도 잘 자는 냥이</p>
+                 
+                  <p class="card-text"><small class="text-body-secondary">아이유 - 무릎</small></p>
+                </div>
+              </div>
+              <div class="card">
+                  <video src="images/waiting.mp4" class="card-img-top"  controls></video>
+                <div class="card-body">
+                  <h5 class="card-title">Waiting Cat</h5>
+                  <p class="card-text"> Who waits for you~? <br> 누구 기다리냥~? </p>
+                  <p class="card-text"><small class="text-body-secondary">Vienna - Billy joel</small></p>
+                </div>
+              </div>  
+              <div class="card">
+                  <video src="images/sleepless.mp4" class="card-img-top" controls></video>
+                <div class="card-body">
+                  <h5 class="card-title">Sleepless Cat</h5>
+                  <p class="card-text">잠 못 이루는 냥이~<br> 왜 안 자니
+                  </p>
+                  <p class="card-text"><small class="text-body-secondary">Up All Night - Charlie Puth</small></p>
+                </div>
+              </div>
+              <div class="card">
+                  <video src="images/playing.mp4" class="card-img-top" controls></video>
+                  <div class="card-body">
+                    <h5 class="card-title">Playing Cat</h5>
+                    <p class="card-text"> Ready Set Go!
+                    </p>
+                    <p class="card-text"><small class="text-body-secondary"> That That - 싸이  </small></p>
+                  </div>
+                </div>
+          </div>
+          <footer>
+           
+<p> &lt; This site is designed for personal portfolios, not for commercial purposes &gt;</p>
+          </footer>
+
+    </div>
+</body>
+</html>
